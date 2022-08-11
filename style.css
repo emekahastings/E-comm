@@ -1,0 +1,786 @@
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+body{
+    background-color: white;
+    margin: auto; 
+    padding: 0rem; 
+
+}
+#headers{
+    background-color: white;
+    width: 100vw;
+    height: 6vh;
+    position: relative;
+    bottom: 0.8rem; 
+ border-bottom: 1px solid rgb(174, 172, 172);
+}
+ul{
+    display: flex;
+}
+ul>li {
+    list-style: none;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 2.5rem;
+    cursor: pointer;
+}
+.legit{
+    padding: 0.5rem;
+    padding-left: 1.25rem;
+}
+#lightbox{
+    position: absolute;
+    top: 0rem;
+    z-index: 1000;
+    width: 100%;
+    height: 100vw;
+    background-color: rgba(0, 0, 1, 0.8);
+    display: none;
+}
+#lightbox.active{
+    position: absolute;
+    display: flex;
+  
+    width: 100vw;
+    height: 100vw;
+}
+.cart{
+    position: relative;
+    right: 13rem;
+}
+.avatar{
+     width: 2rem;
+     height: fit-content;
+    position: relative;
+    right: 13rem;
+}
+.del{
+position: relative;
+left: 2.3in;
+     width: fit-content;
+     height: fit-content;
+    }
+.cartimage{
+    margin-left: 0.4rem;
+}
+/* .red{
+    width: 1rem;
+    height: 1rem;
+  display: none;
+    background-color: red;
+    border-radius: 50vw;
+    position: absolute;
+    top: 0rem;
+   
+  
+} */
+.digit{
+    color: white;
+    
+    font-weight: 700;
+    position: relative;
+  top: 3px;
+    left: 5px;
+  
+   
+}
+.desc{
+    font-size: 1rem;
+}
+
+.cart{
+padding-left: 26rem;
+margin-right: 0rem;
+}
+#product1{
+  width: 36vw;
+    margin: 2.7rem;
+    margin-left: 9.3rem;
+    cursor: pointer;
+}
+#side{
+    display: none;
+}
+
+#details{
+    float: right;
+    margin-right: 0.7rem;
+    padding-top: 7rem;
+   position:absolute;
+  left: 47rem;
+  bottom: 3.5rem;
+}
+
+ .sneaker{
+    color: orangered;
+    font-size: 1.3rem;
+}
+.title{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text{
+    font-size: 1.3em;
+    color: rgb(159, 156, 156);
+}
+.img1, .img2, .img3, .img4{
+   width: 8vw;
+   height: fit-content;
+ position: relative;
+bottom: 2.3rem;
+border-radius: 0.4rem;
+cursor: pointer;
+margin-left: 0.7rem;
+}
+#group{
+    margin-left: 9rem;
+
+}
+.same{
+    display: flex;
+}
+.price{
+    font-size: 1.5rem;
+
+}
+.nc, .pc{
+    display: none;
+}
+
+.discount{
+    font-size: 1.1rem;
+    color: orangered;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(241, 218, 174);
+    padding: 2px;
+    position: relative;
+    bottom: 1rem;
+    border-radius: 0.4rem;
+    margin-left: 1.2rem;
+
+}
+.actual{
+    color: rgb(170, 163, 163);
+    text-decoration: line-through;
+    font-size: 1.3rem;
+  position: relative;
+  bottom: 1.7rem;
+  left: 3rem;
+}
+#flex-container{
+    display: flex;
+    align-items: center;
+}
+.reds{
+    width: 1.1rem;
+    height: 1.1rem;
+  display: none;
+    background-color: orangered;
+     border-radius: 50%;
+     position: absolute;
+    left:285px; 
+    z-index: 100; 
+}
+
+#cartinfo{
+    width: 0in;
+    height:1.8in;
+    position: relative;
+    background-color: whitesmoke;
+    float: right;
+    right: 14rem;
+    margin: auto;
+    z-index: 1000;
+    bottom: 1.6rem; 
+    overflow: hidden;
+}
+#info{
+    display: flex;
+}
+.cartel{
+    font-size: 25px;
+    font-family: 40rem;
+     padding-bottom: 0.75rem;
+     margin-bottom: 0.75rem;
+     border-bottom: 1px rgb(112, 111, 111) solid;
+}
+#del{
+  margin-right: 1.2rem;
+  width: 1.2rem;
+  position: relative;
+  top: 0.8rem;
+  height: fit-content;
+}
+#type{
+    padding-left: 1.3rem;
+    font-size: 1.2rem;
+
+}
+#check{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 80vw;
+    height: fit-content;
+    padding: 0.7rem;
+    background-color: orangered;
+    border-radius: 5px;
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+.out{
+  padding-left: 70px;
+}
+#thumbimg{
+    width: 3.1rem;
+    height: fit-content;
+    margin-left: 0.75rem;
+}
+#closebtn{
+    width: 1%;
+    height: fit-content;
+    position: relative;
+    left: 6.3rem;
+    top:2.7rem;
+    /* bottom: 100px; */
+   color: white;
+}
+.cartname{
+    font-size: 1rem;
+    font-weight: 100;
+   color: grey;
+  border-bottom: grey 1px solid;
+}
+.tocart{
+    background-color: orangered;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+    flex: 0.4;
+}
+.action{
+    background-color: rgb(242, 234, 234);
+    padding: 0.7rem;
+    align-items: center;
+    border-radius: 5px;
+    flex: 0.25;
+   
+}
+.plus{
+    margin-left: 1.2rem;
+}
+.minus{
+    margin-right: 1.2rem;
+    position: relative;
+    bottom: 5px
+}
+.zero{
+    font-size: 1.1rem;
+}
+.basket{
+   padding-left: 2rem;
+    align-items: center;
+}
+.block:hover{
+    border: 3px solid orangered;
+    border-radius: 0.6rem;
+
+}
+#icons{
+    display: block;
+    position: relative;
+    top: 21rem;
+    left: 31rem;
+    z-index: 1000;
+    display: none;
+}
+.next{
+    position: relative;
+    left: 3.9rem;
+    display: block;
+}
+.previous{
+   position: relative;
+   right: 21rem;
+   display: block;
+}
+#circles{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: yellow;
+    border-radius:50vw ;
+    position: relative;
+    top: 21rem;
+    left: 35rem;
+    z-index: 800;
+    display: none;
+}
+#empty{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 3.2rem;
+    display: none;
+    position: absolute;
+    bottom: 4.5rem;
+    right: 3.2rem;
+}
+#circles2{
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: yellow;
+    border-radius:50vw ;
+    position: relative;
+    top: 17rem;
+    left: 10rem;
+    z-index: 800;
+    display: none;
+}
+
+.legit:hover{
+    border-bottom: 4px solid orangered;
+}
+.menus{
+    display: none;
+}   
+ @media screen and (max-width:460px) and (max-height:900px){
+    html{
+        overflow-x: hidden;
+           }
+
+.menus{
+    display: block;
+    position: relative;
+    bottom: 2.8rem;
+    left: 2rem;
+  
+}
+
+.legit{
+    display: none;
+}
+#headers{
+    position: relative; 
+    width: 100vw;
+    height: 7vw;
+    top: 0rem;
+}
+.cart{
+    position: relative;
+right: 18.3rem;
+
+}
+.avatar{
+    width: 1.6rem;
+    height: 1.6rem;
+    position: relative;
+    right: 18.75rem;
+}
+#side{
+    display: block;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    font-size: 1.25rem;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 3.8rem;
+    width: 0px;
+    background-color: rgb(76, 73, 73);
+    transition: 0.7s;
+}
+.sidenav > a{
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+   color: white;
+    transition: 0.3s;
+    display: block;
+}
+.x{
+    position: relative;
+    bottom: 2.5rem;
+    left: 7.5rem;
+}
+
+#everything{
+    display: block;
+}
+.block{
+    display: none;
+}
+
+#product1{
+    position: relative;
+    width: 100vw;
+    height:40vh;
+  bottom: 8.3rem;
+  right: 10rem;
+  margin-bottom: 5rem;
+    z-index: 400;
+    
+} 
+
+#details{
+    position: absolute;
+    top:14rem;
+     left: 0.5rem;
+    z-index: 400;
+    /* margin-top: 16.3rem; */
+}
+.sneaker{
+    font-size: 1.1rem;
+}
+.title{
+    font-size:1.44rem ;
+    position: relative;
+}
+.text{
+    font-size: 1rem;
+}
+#flex-container{
+    position: absolute;
+    display: block;
+    align-items: center;
+}
+.plus{
+ position: relative;
+ float: right;
+ right: 25vw ;
+}
+.put{
+    margin-left: 1.25rem;
+}
+.minus{
+    margin-right:6rem;
+    position: relative;
+    float: left;
+    /* left: 30vw; */
+    bottom: -6px;
+    margin-left: 4rem;
+}
+.zero{
+    font-size: 1.1rem;
+    align-items: center;
+}
+.basket{
+   padding-left: 7rem;
+    align-items: center;
+}
+.tocart{
+    position: relative;
+    background-color: orangered;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 5px;
+    flex: 2;
+   width: 100vw;
+}
+.action{
+    background-color: rgb(242, 234, 234);
+    padding: 12px;
+    align-items: center;
+    border-radius: 5px;
+width: 100vw;
+   flex: 2;
+}
+#icons{
+    display: block;
+    position: absolute;
+    top:22rem;
+    left: 28.2rem;
+    z-index: 1000;;
+}
+.previous{
+    position: absolute;
+ z-index: 1000;
+    display: block;
+    bottom: 11.5rem;
+    right: 22.75rem;
+ }
+ .next{
+    position:absolute;
+bottom: 12rem;
+    left: -10.4rem;
+   z-index: 1000;
+}
+ #circles{
+     width: 2rem;
+     height: 2rem;
+     background-color: white;
+     border-radius:50% ;
+     position: relative;
+     z-index: 900;
+     display: block;
+     left: 4rem;
+     top: 15.5vh;
+ }
+ #circles2{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius:50% ;
+    position: relative;
+    top: 11.5vh;
+    left: 17.2rem;
+    z-index: 900;
+    display: block;
+}
+ .actual{
+    color: rgb(170, 163, 163);
+    text-decoration: line-through;
+    font-size: 1.3rem;
+  position: relative;
+  bottom: 1.2rem;
+  left: 9rem;
+}
+#lightbox.active{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#lightbox{
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(0, 0, 1, 0.8);
+    display: none;
+}
+.del{
+    position: relative;
+    left: 2.3in;
+         width: fit-content;
+         height: fit-content;
+        }
+    .cartimage{
+        margin-left: 5px;
+    }
+  
+    .digit{
+        color: white;
+        font-weight: 700;
+        font-size: 1.44rem;
+        position: relative;
+      top: 0.19rem;
+        left: 0.22rem;
+    }
+    .desc{
+        font-size: 1rem;
+    }
+    .cart{
+    padding-left: 18.75rem;
+    margin-right: 0px;
+    }
+     #cartinfo{
+        width: 0rem;
+        height: 10rem;
+        position: absolute;
+        background-color: whitesmoke;
+        right: 3rem;
+        z-index: 1000;
+       top: 0px;
+       margin-top: -2.3rem;
+    } 
+    #total{
+        position: relative;
+    }
+    
+    .reds{
+        width: 1.1rem;
+        height: 1.1rem;
+      display: none;
+        background-color: orangered;
+         border-radius: 50%;
+         position: absolute;
+        left:285px; 
+        z-index: 100; 
+    }
+    .digits{
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        position: relative;
+      bottom: 0.8rem;
+        left: 5px;
+        z-index: 1000;
+    }
+    #thumbimg{
+        width: 1.88rem;
+        height: 1.88rem;
+        margin-left: 0.6rem;
+    }
+    #check{
+        font-size: 1.2rem;
+        display: block;
+        flex-direction: row;
+        color: white;
+        width: 56vw;
+        height: fit-content;
+        padding: 0.6rem;
+        background-color: orangered;
+        border-radius: 5px;
+        margin-top: 1.25rem;
+        margin-left: 1.25rem;
+        margin-right:6.25rem;
+    }
+    .out{
+      padding-left: 4.4rem;
+    }
+}
+@media screen and (max-width:460px) and (max-height:750px){
+    #product1{
+        position: relative;
+        width: 100vw;
+        height:42vh;
+      bottom: 8.3rem;
+      right: 10rem;
+      margin-bottom: 5rem;
+        z-index: 400;
+        
+    } 
+    
+    #details{
+        position: absolute;
+        top:11rem;
+         left: 0.5rem;
+        z-index: 400;
+        /* margin-top: 16.3rem; */
+    }
+    .previous{
+        position: absolute;
+     z-index: 1000;
+        display: block;
+        bottom: 13.5rem;
+        right: 22.8rem;
+     }
+     .next{
+        position:absolute;
+    bottom: 13.8rem;
+        left: -10.4rem;
+       z-index: 1000;
+    }
+     #circles{
+         width: 2rem;
+         height: 2rem;
+         background-color: white;
+         border-radius:50% ;
+         position: relative;
+         z-index: 900;
+         display: block;
+         left: 4rem;
+         top: 14.5vh;
+     }
+     #circles2{
+        width: 2rem;
+        height: 2rem;
+        background-color: white;
+        border-radius:50% ;
+        position: relative;
+        top: 9.5vh;
+        left: 17.2rem;
+        z-index: 900;
+        display: block;
+    }
+
+}
+@media screen and (max-width:390px) and (max-height:850px){
+    .previous{
+        position: absolute;
+     z-index: 1000;
+        display: block;
+        bottom: 13rem;
+        right: 22.8rem;
+     }
+     .next{
+        position:absolute;
+    bottom: 13.5rem;
+        left: -10.4rem;
+       z-index: 1000;
+    }
+     #circles{
+         width: 2rem;
+         height: 2rem;
+         background-color: white;
+         border-radius:50% ;
+         position: relative;
+         z-index: 900;
+         display: block;
+         left: 4rem;
+         top: 14.5vh;
+     }
+     #circles2{
+        width: 2rem;
+        height: 2rem;
+        background-color: white;
+        border-radius:50% ;
+        position: relative;
+        top: 9.5vh;
+        left: 17.2rem;
+        z-index: 900;
+        display: block;
+    }
+
+}
+@media screen and (max-width:390px) and (max-height:750px){
+
+    #product1{
+        position: relative;
+        width: 100vw;
+        height:42vh;
+      bottom: 8.3rem;
+      right: 10rem;
+      margin-bottom: 5rem;
+        z-index: 400;
+        
+    } 
+    
+    #details{
+        position: absolute;
+        top:9rem;
+         left: 0.5rem;
+        z-index: 400;
+        /* margin-top: 16.3rem; */
+    }
+    .previous{
+        position: absolute;
+     z-index: 1000;
+        display: block;
+        bottom: 14.2rem;
+        right: 22.75rem;
+     }
+     .next{
+        position:absolute;
+    bottom: 14.3rem;
+        left: -10.4rem;
+       z-index: 1000;
+    }
+     #circles{
+         width: 2rem;
+         height: 2rem;
+         background-color: white;
+         border-radius:50% ;
+         position: relative;
+         z-index: 900;
+         display: block;
+         left: 4rem;
+         top: 14.5vh;
+     }
+     #circles2{
+        width: 2rem;
+        height: 2rem;
+        background-color: white;
+        border-radius:50% ;
+        position: relative;
+        top: 9.5vh;
+        left: 17.2rem;
+        z-index: 900;
+        display: block;
+    }
+}
