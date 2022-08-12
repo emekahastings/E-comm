@@ -348,18 +348,20 @@ margin-left: 0.7rem;
     display: none;
 }   
  @media screen and (max-width:460px) and (max-height:900px){
-    html{
-        overflow-x: hidden;
-           }
+    /* html{
+         overflow-x: hidden;
+    } */
+        
   body{
  width: 100vw;
- height: 100vh;
+ height: fit-content;
+ /* overflow-x: hidden; */
            }
 
 .menus{
     display: block;
     position: relative;
-    bottom: 2rem;
+    bottom: 2.8rem;
     left: 2rem;
   
 }
@@ -374,15 +376,18 @@ margin-left: 0.7rem;
     top: 0rem;
 }
 .cart{
-    position: relative;
-right: 18.3rem;
+    position: absolute;
+    float: right;
+right: 4rem;
 
 }
 .avatar{
     width: 1.6rem;
     height: 1.6rem;
-    position: relative;
-    right: 18.75rem;
+    position: absolute;
+    right: 0rem;
+    float: right;
+    margin-right: 1.5rem;
 }
 #side{
     display: block;
@@ -418,24 +423,27 @@ right: 18.3rem;
 .block{
     display: none;
 }
-
+#everything{
+    width: 100%;
+    height: 100%;
+}
 #product1{
     position: relative;
-    width: 103vw;
-    height:37vh;
-  bottom: 7.5rem;
-  right: 10rem;
-  margin-bottom: 5rem;
-    z-index: 400;
-    
+    width: 101vw;
+display: block;
+top: -7.8rem;
+padding-bottom: 50.5rem;
+right: 10rem;
+ z-index: 400; 
 } 
 
 #details{
     position: absolute;
-    top:13rem;
+   max-width: 100%;
+   padding-top: 100%;
+    top:0rem;
      left: 0.5rem;
     z-index: 400;
-    /* margin-top: 16.3rem; */
 }
 .sneaker{
     font-size: 1.1rem;
@@ -454,24 +462,24 @@ right: 18.3rem;
 }
 .plus{
  position: relative;
- float: right;
- right: 25vw ;
+margin-left: 30%;
 }
 .put{
     margin-left: 1.25rem;
 }
 .minus{
-    margin-right:6rem;
     position: relative;
-    float: left;
-    /* left: 30vw; */
-    bottom: -6px;
-    margin-left: 4rem;
+ 
+    margin-left: 10%;
+ 
 }
 .zero{
     font-size: 1.1rem;
     align-items: center;
-}
+    position: relative;
+   margin-left: 25%;
+   
+} 
 .basket{
    padding-left: 7rem;
     align-items: center;
@@ -490,58 +498,73 @@ right: 18.3rem;
     padding: 12px;
     align-items: center;
     border-radius: 5px;
-width: 100vw;
+width: 100%;
    flex: 2;
+ 
 }
 #icons{
-    display: block;
-    position: absolute;
-    top:22rem;
-    left: 28.2rem;
-    z-index: 1000;;
+    display: flex;
+    position: relative;
+   
+
 }
 .previous{
     position: absolute;
- z-index: 1000;
-    display: block;
-    bottom: 11.5rem;
-    right: 22.75rem;
+    right: 20rem;
+ z-index: 900;
+ top: 0.5rem;
+right: 0.6rem;
+
+    /* bottom: 11.5rem;
+    right: 22.75rem; */
  }
  .next{
-    position:absolute;
-bottom: 12rem;
-    left: -10.4rem;
-   z-index: 1000;
+    position:relative;
+    left: 0;
+   z-index: 900;
+   top:0.5rem;
+   margin-left: 0.6rem;
+  display: block;
 }
  #circles{
      width: 2rem;
      height: 2rem;
-     background-color: white;
+     background-color:white;
      border-radius:50% ;
-     position: relative;
-     z-index: 900;
      display: block;
+     position: relative;
+     z-index: 800;
+     /* left: 3rem; */
+     left: 7%;
+     top: 7.5rem;
+     margin-left: 1rem;
+  
+     /* display: block;
      left: 4rem;
-     top: 15.5vh;
+     top: 15.5vh; */
  }
  #circles2{
     width: 2rem;
     height: 2rem;
     background-color: white;
     border-radius:50% ;
-    position: relative;
-    top: 11.5vh;
-    left: 17.2rem;
-    z-index: 900;
+    position: absolute;
+    z-index: 800;
+    top: 8.5rem;
     display: block;
+ margin-left: 6rem;
 }
+#circ{
+    display: flex;
+}
+
  .actual{
     color: rgb(170, 163, 163);
     text-decoration: line-through;
     font-size: 1.3rem;
   position: relative;
   bottom: 1.2rem;
-  left: 9rem;
+  left: 5rem;
 }
 #lightbox.active{
     position: absolute;
@@ -637,175 +660,4 @@ bottom: 12rem;
     .out{
       padding-left: 4.4rem;
     }
-}
-@media screen and (max-width:460px) and (max-height:750px){
-    #product1{
-        position: relative;
-        width: 100vw;
-        height:42vh;
-      bottom: 8.3rem;
-      right: 10rem;
-      margin-bottom: 5rem;
-        z-index: 400;
-        
-    } 
-    
-    #details{
-        position: absolute;
-        top:11rem;
-         left: 0.5rem;
-        z-index: 400;
-        /* margin-top: 16.3rem; */
-    }
-    .previous{
-        position: absolute;
-     z-index: 1000;
-        display: block;
-        bottom: 13.5rem;
-        right: 22.8rem;
-     }
-     .next{
-        position:absolute;
-    bottom: 13.8rem;
-        left: -10.4rem;
-       z-index: 1000;
-    }
-     #circles{
-         width: 2rem;
-         height: 2rem;
-         background-color: white;
-         border-radius:50% ;
-         position: relative;
-         z-index: 900;
-         display: block;
-         left: 4rem;
-         top: 14.5vh;
-     }
-     #circles2{
-        width: 2rem;
-        height: 2rem;
-        background-color: white;
-        border-radius:50% ;
-        position: relative;
-        top: 9.5vh;
-        left: 17.2rem;
-        z-index: 900;
-        display: block;
-    }
-
-}
-@media screen and (max-width:390px) and (max-height:850px){
-    .previous{
-        position: absolute;
-     z-index: 1000;
-        display: block;
-        bottom: 13rem;
-        right: 22.8rem;
-     }
-     .next{
-        position:absolute;
-    bottom: 13.5rem;
-        left: -10.4rem;
-       z-index: 1000;
-    }
-     #circles{
-         width: 2rem;
-         height: 2rem;
-         background-color: white;
-         border-radius:50% ;
-         position: relative;
-         z-index: 900;
-         display: block;
-         left: 4rem;
-         top: 14.5vh;
-     }
-     #circles2{
-        width: 2rem;
-        height: 2rem;
-        background-color: white;
-        border-radius:50% ;
-        position: relative;
-        top: 9.5vh;
-        left: 17.2rem;
-        z-index: 900;
-        display: block;
-    }
-
-}
-@media screen and (max-width:390px) and (max-height:750px){
-
-    #product1{
-        position: relative;
-        width: 100vw;
-        height:42vh;
-      bottom: 8.3rem;
-      right: 10rem;
-      margin-bottom: 5rem;
-        z-index: 400;
-        
-    } 
-    
-    #details{
-        position: absolute;
-        top:9rem;
-         left: 0.5rem;
-        z-index: 400;
-        /* margin-top: 16.3rem; */
-    }
-    .previous{
-        position: absolute;
-     z-index: 1000;
-        display: block;
-        bottom: 14.2rem;
-        right: 22.75rem;
-     }
-     .next{
-        position:absolute;
-    bottom: 14.3rem;
-        left: -10.4rem;
-       z-index: 1000;
-    }
-     #circles{
-         width: 2rem;
-         height: 2rem;
-         background-color: white;
-         border-radius:50% ;
-         position: relative;
-         z-index: 900;
-         display: block;
-         left: 4rem;
-         top: 14.5vh;
-     }
-     #circles2{
-        width: 2rem;
-        height: 2rem;
-        background-color: white;
-        border-radius:50% ;
-        position: relative;
-        top: 9.5vh;
-        left: 17.2rem;
-        z-index: 900;
-        display: block;
-    }
-}
-@media screen and (max-width:390px) and (max-height:650px){
-    #product1{
-        position: relative;
-        width: 100vw;
-        height:42vh;
-      bottom: 7.7rem;
-      right: 10rem;
-      margin-bottom: 5rem;
-        z-index: 400;
-        
-    } 
-    
-    #details{
-        position: absolute;
-        top:9rem;
-         left: 0.5rem;
-        z-index: 400;
-        /* margin-top: 16.3rem; */
-    }
-
 }
