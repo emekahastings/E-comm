@@ -1,5 +1,4 @@
 
-let plu= document.querySelector('.plu')
 let plus= document.querySelector('.pluss')
 let minus= document.querySelector('.minus')
 let number= document.querySelector('.zero')
@@ -34,7 +33,7 @@ console.log(del)
 // let circle2= document.getElementById('circle1')
 let current=0
 
-plu.addEventListener('click', function(){
+plus.addEventListener('click', function(){
   console.log('yes')
 })
 
@@ -92,13 +91,14 @@ console.group('hi')
     number.innerHTML= count 
 })
 
-function decrease(){
+
+minus.addEventListener('click', function decrease(){
   if(minus.classList.contains('minus')){
     count--
   
 }
 number .innerHTML= count
-}
+})
 
 
 
