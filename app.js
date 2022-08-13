@@ -33,9 +33,7 @@ console.log(del)
 // let circle2= document.getElementById('circle1')
 let current=0
 
-plus.addEventListener('click', function(){
-  console.log('yes')
-})
+
 
 function reset(){
   for(i=0; i<slideimages.length;i++){
@@ -82,17 +80,16 @@ show()
 
 // Increase the number
 let count=0
-plus.addEventListener('click', function Increase(){
-console.group('hi')
-    if(pluss.classList.contains('plus')){
-      alert('hi')
+plus.addEventListener('click', function (){
+    if(plus.classList.contains('pluss')){
+     
       count++
     }
     number.innerHTML= count 
 })
 
 
-minus.addEventListener('click', function decrease(){
+minus.addEventListener('click', function(){
   if(minus.classList.contains('minus')){
     count--
   
