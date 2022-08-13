@@ -271,7 +271,7 @@ margin-left: 0.7rem;
     flex: 0.25;
    
 }
-.plus{
+.pluss{
     margin-left: 1.2rem;
 }
 .minus{
@@ -431,7 +431,7 @@ right: 4rem;
     position: relative;
     width: 101vw;
 display: block;
-top: -7.8rem;
+top: -6.6rem;
 padding-bottom: 50.5rem;
 right: 10rem;
  z-index: 400; 
@@ -456,20 +456,20 @@ right: 10rem;
     font-size: 1rem;
 }
 #flex-container{
-    position: absolute;
+    position: relative;
     display: block;
     align-items: center;
 }
-.plus{
+.pluss{
  position: relative;
 margin-left: 30%;
+
 }
 .put{
     margin-left: 1.25rem;
 }
 .minus{
     position: relative;
- 
     margin-left: 10%;
  
 }
@@ -478,6 +478,7 @@ margin-left: 30%;
     align-items: center;
     position: relative;
    margin-left: 25%;
+   
    
 } 
 .basket{
@@ -500,6 +501,7 @@ margin-left: 30%;
     border-radius: 5px;
 width: 100%;
    flex: 2;
+   z-index: 1000;
  
 }
 #icons{
@@ -535,8 +537,8 @@ right: 0.6rem;
      position: relative;
      z-index: 800;
      /* left: 3rem; */
-     left: 7%;
-     top: 7.5rem;
+     left: 20%;
+     top: 8.8rem;
      margin-left: 1rem;
   
      /* display: block;

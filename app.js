@@ -1,6 +1,6 @@
 
-
-let plus= document.querySelector('.plus')
+let plu= document.querySelector('.plu')
+let plus= document.querySelector('.pluss')
 let minus= document.querySelector('.minus')
 let number= document.querySelector('.zero')
 let image1=document.querySelector('.img1')
@@ -33,6 +33,10 @@ console.log(del)
 // let circle1= document.getElementById('circles')
 // let circle2= document.getElementById('circle1')
 let current=0
+
+plu.addEventListener('click', function(){
+  console.log('yes')
+})
 
 function reset(){
   for(i=0; i<slideimages.length;i++){
@@ -79,13 +83,14 @@ show()
 
 // Increase the number
 let count=0
-function Increase(){
-
-    if(plus.classList.contains('plus')){
+plus.addEventListener('click', function Increase(){
+console.group('hi')
+    if(pluss.classList.contains('plus')){
+      alert('hi')
       count++
     }
     number.innerHTML= count 
-}
+})
 
 function decrease(){
   if(minus.classList.contains('minus')){
